@@ -1,0 +1,12 @@
+# StructZone Robots.txt
+# https://www.structzone.com
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.structzone.com/sitemap.xml
+
+# Disallow admin/processing files
+Disallow: /includes/
+Disallow: /process-contact.php

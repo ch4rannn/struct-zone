@@ -1,0 +1,20 @@
+services:
+  - type: web
+    name: structzone
+    runtime: docker
+    region: singapore
+    plan: free
+    branch: main
+    envVars:
+      - key: DB_HOST
+        sync: false
+      - key: DB_NAME
+        sync: false
+      - key: DB_USER
+        sync: false
+      - key: DB_PASS
+        sync: false
+      - key: DB_PORT
+        value: 3306
+      - key: SITE_URL
+        sync: false

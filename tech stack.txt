@@ -1,0 +1,158 @@
+RIMARY TECH STACK (FINAL & LOCKED)
+
+This is the best possible stack for an Arup-style engineering website hosted on cPanel.
+
+1️⃣ Frontend (Core)
+✅ Technologies
+
+HTML5
+
+CSS3 (use SCSS if you know it, plain CSS if not)
+
+Vanilla JavaScript
+
+GSAP → for subtle, premium animations
+
+Three.js → optional, limited use only
+
+Why this is the right choice
+
+Works perfectly on cPanel
+
+No Node.js, no build tools, no deployment pain
+
+Fast, SEO-friendly
+
+Full design control (critical for Arup-style layouts)
+
+Easy to maintain long-term
+
+Anyone telling you React/Next.js here is wasting your time.
+
+2️⃣ Backend (Minimal & Clean)
+✅ Technologies
+
+PHP 8.1+
+
+Plain PHP includes (NO framework)
+
+What PHP is used for
+
+Page templating (header.php, footer.php)
+
+Contact form handling
+
+Simple routing if needed
+
+❌ No Laravel
+❌ No MVC overengineering
+
+Arup-style sites don’t need heavy backends.
+
+3️⃣ CMS (Optional but Smart)
+✅ Use WordPress ONLY if:
+
+You want easy blog updates
+
+You want admin-managed projects
+
+Correct way to use WordPress
+
+Install WordPress in /cms or subdomain
+
+Use it headless / semi-headless
+
+Fetch content via REST API or PHP include
+
+Frontend stays custom (no themes)
+
+❌ Don’t build the whole site with Elementor
+❌ Don’t use bloated themes
+
+4️⃣ Folder Structure (Use This Exactly)
+/public_html
+│── index.php
+│── assets/
+│   ├── css/
+│   │   └── main.css
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── animations.js
+│   │   └── three-scene.js
+│   ├── images/
+│   └── models/        # .glb files (if any)
+│
+│── includes/
+│   ├── header.php
+│   ├── footer.php
+│   └── config.php
+│
+│── services/
+│── projects/
+│── about.php
+│── contact.php
+
+
+Simple = professional.
+
+5️⃣ Animation Rules (Arup-Style)
+Use GSAP ONLY for:
+
+Fade-in on scroll
+
+Subtle image motion
+
+Text reveal (slow, controlled)
+
+Do NOT use:
+
+Fast parallax
+
+Looping animations
+
+Overlapping motion
+
+Rule
+
+If animation draws attention to itself → remove it.
+
+That’s exactly how Arup thinks.
+
+6️⃣ 3D Usage Rules (Non-Negotiable)
+
+3D is optional, not core.
+
+Allowed
+
+One hero 3D scene
+
+One project explainer
+
+Structural concept visualization
+
+Tech
+
+Three.js
+
+.glb models
+
+Lazy-loaded
+
+Disabled on low-end mobile
+
+❌ No 3D background everywhere
+❌ No auto-rotating objects for decoration
+
+7️⃣ Hosting Setup (cPanel Checklist)
+
+PHP 8.1+
+
+HTTPS (Let’s Encrypt)
+
+Enable OPcache
+
+GZIP compression
+
+Image WebP conversion
+
+Cloudflare CDN (optional)

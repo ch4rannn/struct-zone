@@ -1,0 +1,14 @@
+# System
+.DS_Store
+Thumbs.db
+node_modules/
+vendor/
+
+# Environment / Data
+*.env
+structzone_data_*.sql
+structzone_deploy.zip
+
+# IDE
+.vscode/
+.idea/
